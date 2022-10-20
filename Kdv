@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+public class Patika {
+
+    public static void main(String[] args){
+
+
+        double Kdvsiz,Tutar, Kdv, KdvTutar;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Ürünün Ücreti?");
+        Kdvsiz= input.nextDouble();
+
+
+        Kdv = 0.18;
+        KdvTutar = Kdv * Kdvsiz;
+        Tutar = Kdvsiz + KdvTutar;
+
+
+        System.out.println("Kdv: " + KdvTutar + " TL ");
+        System.out.println("Tutar: " + Tutar + " TL ");
+
+
+
+
+
+
+    }
+}
