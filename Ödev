@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    float mat, fizik, kimya, turkce, tarih, muzik;
+
+
+        Scanner Dersler = new Scanner(System.in);
+        System.out.println("Mat Notu");
+        mat= Dersler.nextInt();
+
+        System.out.println("Fizik Notu");
+        fizik= Dersler.nextInt();
+        System.out.println("Kimya Notu");
+        kimya= Dersler.nextInt();
+        System.out.println("Turkce Notu");
+        turkce= Dersler.nextInt();
+        System.out.println("Tarih Notu");
+        tarih= Dersler.nextInt();
+        System.out.println("Müzik Notu");
+        muzik= Dersler.nextInt();
+
+        double Ortalama = (mat + fizik + kimya + turkce + tarih + muzik) / 6;
+        System.out.print("Ortalamanız:");
+        System.out.println(Ortalama);
+
+        Boolean Sonuc = Ortalama < 60;
+        String str = (Sonuc) ? "Galdin" : "Gectin";
+        System.out.println(str);
+
+         // www.patika.dev
+    }
+}
