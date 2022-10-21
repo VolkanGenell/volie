@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class VucutEndeks {
+    public static void main(String[] args) {
+
+        double boy, kilo;
+
+        Scanner indeks = new Scanner(System.in);
+        System.out.println("Lütfen Kilonuzu Giriniz: ");
+        kilo = indeks.nextDouble();
+        System.out.print("Lütfen Boyunuzu Giriniz: ");
+        boy = indeks.nextDouble();
+        double endeks = kilo / ( boy*boy);
+        System.out.println("Vücut Kitle İndeksiniz: " + endeks);
+
+    }
+}
