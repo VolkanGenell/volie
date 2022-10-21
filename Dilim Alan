@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Proje {
+        public static void main(String[] args) {
+
+           Double r, π = 3.14, a;
+
+           System.out.println("Lütften yarıçapı giriniz: ");
+           Scanner girdi = new Scanner(System.in);
+           r = girdi.nextDouble();
+
+            System.out.println("Lütften a'yı giriniz: ");
+            Scanner input = new Scanner(System.in);
+           a = input.nextDouble();
+
+           Double Alan = π*r*r, Cevre = 2*π*r;
+           Double dilim = Alan * a / 360;
+
+            System.out.println("Dairenin Alanı: " + Alan + " m2");
+            System.out.println("Dairenin Cevresi: " + Cevre + " m");
+            System.out.println("Dilimin Alanı: " + dilim + " m2");
+
+
+
+
+
+    }
+}
