@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class VucutEndeks {
+    public static void main(String[] args) {
+
+      Scanner fiyat = new Scanner(System.in);
+      double armut, elma, domates, muz, patlican;
+
+        System.out.println("Kaç kilo armut aldın?");
+        armut = fiyat.nextDouble();
+        System.out.println("Kaç kilo elma aldın?");
+        elma = fiyat.nextDouble();
+        System.out.println("Kaç kilo domates aldın?");
+        domates = fiyat.nextDouble();
+        System.out.println("Kaç kilo muz aldın?");
+        muz = fiyat.nextDouble();
+        System.out.println("Kaç kilo patlıcan aldın?");
+        patlican = fiyat.nextDouble();
+
+        double armutTutar = (armut * 2.14), elmaTutar= (3.67 * elma), domatesTutar = (domates * 1.11), muzTutar = (muz * 0.95), patlicanTutar = (patlican * 5);
+        double Tutar = armutTutar + elmaTutar + domatesTutar + muzTutar + patlicanTutar;
+        System.out.println( "Bizi terch ettiğiniz için teşekkür ederiz. Borcunuz " +  Tutar + " TL");
+
+
+
+    }
+}
