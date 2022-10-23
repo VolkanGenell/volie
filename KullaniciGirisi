@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class KullaniciGirisi {
+    public static void main(String[] args) {
+        String user, sifre, yeniSifre;
+        Scanner kullanici =  new Scanner(System.in);
+        System.out.println("Kullanıcı Adınız: ");
+
+        user = kullanici.nextLine();
+
+        switch (user) {
+            case "volkan":
+                System.out.println("Sifrenizi Giriniz");
+                sifre = kullanici.nextLine();
+                switch (sifre){
+                    case"java":
+                        System.out.println("Merhaba Volkan");
+                        break;
+                    default:
+                        System.out.println("Şifreni sıfırlamak için:\n 1) Evet\n 2) Hayır");
+                        int sifirlama = kullanici.nextInt();
+                            switch (sifirlama){
+                                case 1:
+                                    System.out.println("Lütfen Yeni Şifrenizi Giriniz");
+                                    kullanici.nextLine();
+                                    yeniSifre = kullanici.nextLine();
+
+                                    switch (yeniSifre) {
+                                        case "java":
+                                            System.out.println("Şifreyi Biliyordun da ne " +
+                                                    "diye uğraştırıyorsun puşt. Başka bir şey gir");
+                                            kullanici.nextLine();
+                                            System.out.println("Yeni şifren hayırlı uğurlu olsun");
+
+                                            break;
+
+                                        default:
+                                            System.out.println("Yeni şifren hayırlı uğurlu olsun");
+                                            break;
+                                    }
+                                break;
+                                case 2:
+                                    System.out.println("Siktir git yavşak");
+                                        break;}
+                        break;}
+                break;
+
+            default: System.out.println("Siktir lan göt");
+                break;}
+
+    }
+}
