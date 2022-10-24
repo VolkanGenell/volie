@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Ortalama {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double dersler = 0;
+        double notlarToplam= 0;
+
+        System.out.println("Matematik Notunuzu Giriniz");
+        double mat = scan.nextDouble();
+        if (mat >= 0 && mat <= 100) {
+            dersler = dersler + 1;
+            notlarToplam = notlarToplam + mat;
+        }
+        System.out.println("Geometri Notunuzu Giriniz");
+        double geometri = scan.nextDouble();
+        if (geometri >= 0 && geometri <= 100) {
+            dersler = dersler + 1;
+            notlarToplam = notlarToplam + geometri;
+        }
+        System.out.println("Fizik Notunuzu Giriniz");
+        double fizik = scan.nextDouble();
+            if (fizik >= 0 && fizik <= 100) {
+                dersler = dersler + 1;
+                notlarToplam = notlarToplam + fizik;
+            }
+        System.out.println("Kimya Notunuzu Giriniz");
+        double kimya = scan.nextDouble();
+                if (kimya >= 0 && kimya <= 100) {
+                    dersler = dersler + 1;
+                    notlarToplam = notlarToplam + kimya;
+                }
+        System.out.println("Turkçe Notunuzu Giriniz");
+        double turkce = scan.nextDouble();
+                    if (turkce >= 0 && turkce <= 100) {
+                        dersler = dersler + 1;
+                        notlarToplam = notlarToplam + turkce;
+                    }
+        System.out.println("Tarih Notunuzu Giriniz");
+        double tarih = scan.nextDouble();
+                        if (tarih >= 0 && tarih <= 100) {
+                            dersler = dersler + 1;
+                            notlarToplam = notlarToplam + tarih;
+                        }
+        double ortalama = notlarToplam / dersler;
+        System.out.println("Ortalamanız: " + ortalama);
+        if (ortalama >= 55) {
+            System.out.println("Tebrikler Geçtiniz");
+        }
+            else {
+                System.out.println("Maalesef olmadı, seneye yeniden katılabilirsiniz");
+            }
+    }
+}
