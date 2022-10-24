@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Aktivite {
+    public static void main(String[] args) {
+        Scanner hava = new Scanner(System.in);
+        System.out.println("Hava kaç derece?");
+        int sicaklik = hava.nextInt();
+        if (sicaklik < 5 ) {
+            System.out.println("Bu havada kayak yapılır");}
+            else if (5 <= sicaklik && sicaklik <= 15) {
+                System.out.println("Bu havada sinemaya gidilir");}
+                else if (15 < sicaklik && sicaklik <= 25) {
+                System.out.println("Bu havada pikniğe gidilir");}
+                    else if (sicaklik > 25) {
+                    System.out.println("Bu havada anca yüzmeye gidilir");
+                }
+            }
+        }
+
+
+
