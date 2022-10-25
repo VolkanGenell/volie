@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class Zodyak {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen Yıl Giriniz!");
+        int sene = scan.nextInt();
+        int total = sene % 4;
+
+        switch (total) {
+            case 0:
+                if ((sene % 100 == 0) && (sene % 400 != 0)) {
+                    System.out.println(sene + " Artık yıl değildir.");
+                } else {
+                    System.out.println(sene + " Artık yıldır.");
+                }
+                break;
+            default:
+                System.out.println(sene + " Artık yıl değildir.");
+                break;
+
+        }
+    }
+}
