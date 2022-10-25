@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class Biletleme {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double mesafe;
+        double fiyat = 0.10;
+
+        System.out.println("Lütfen Biletleme Yöntemini Seçiniz:\n1) Gidiş\n2) Gidiş-Dönüş");
+        int yontem = scan.nextInt();
+
+        switch (yontem) {
+            case 1:
+
+                System.out.println("Mesafeyi Giriniz: ");
+                mesafe = scan.nextInt();
+                double tutar = (mesafe * fiyat);
+
+                if (mesafe > 0) {
+                    System.out.println( "Hayır sen kaç yaşındasın?");
+                    int yas = scan.nextInt();
+
+                    if (yas < 12) {
+                        System.out.println( "Fiyat: " + (tutar * 0.5) + " TL");
+                    }
+                        else if (yas >12 && yas <24) {
+                        System.out.println( "Fiyat: " + (tutar * 0.9) + " TL");
+                    } else if (yas > 65) {
+                        System.out.println( "Fiyat: " + (tutar * 0.7) + " TL");
+                        }
+                        else {
+                        System.out.println( "Fiyat: " + tutar + " TL");
+                    }
+                    System.out.println("İyi uçuşlar dileriz!");
+                }
+                else {
+                    System.out.println("Hatalı Giriş Yaptınız!");
+                }
+                break;
+
+            case 2:
+                System.out.println("Mesafeyi Giriniz: ");
+                mesafe = scan.nextInt();
+                tutar = (mesafe * fiyat);
+                double gidisDonusTutar = (tutar * 0.8 * 2);
+
+                if (mesafe > 0) {
+                    System.out.println( "Hayır sen kaç yaşındasın?");
+                    int yas = scan.nextInt();
+
+                    if (yas < 12) {
+                        System.out.println( "Fiyat: " + (gidisDonusTutar * 0.5) + " TL");
+                    }
+                    else if (yas >12 && yas <24) {
+                        System.out.println( "Fiyat: " + (gidisDonusTutar * 0.9) + " TL");
+                    } else if (yas > 65) {
+                        System.out.println( "Fiyat: " + (gidisDonusTutar * 0.7) + " TL");
+                    }
+                    else {
+                        System.out.println( "Fiyat: " + gidisDonusTutar + " TL");
+                    }
+                    System.out.println("İyi uçuşlar dileriz!");
+                }
+                else {
+                    System.out.println("Hatalı Giriş Yaptınız!");
+                }
+                break;
+
+            default:
+                System.out.println("Hatalı Giriş Yaptınız!");
+                break;
+        }
+    }
+}
