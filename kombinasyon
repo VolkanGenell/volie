@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class faktoriyel {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i, n, x, j,k,ifaktoriyel = 1, jfaktoriyel = 1, kfaktoriyel=1;
+
+        System.out.println("Sayı Giriniz");
+        n = scan.nextInt();
+        System.out.println("Sayı Giriniz");
+        x = scan.nextInt();
+
+        int y = (n - x);
+        if (x <= n) {
+            for (i = 1; i <= n; i++) {
+                ifaktoriyel *= i;
+            }
+            for (j = 1; j <= x; j++) {
+                jfaktoriyel *= j;
+            }
+            for (k = 1; k <= y; k++) {
+                kfaktoriyel *= k;
+            }
+            int kombinasyon = ifaktoriyel / (jfaktoriyel * kfaktoriyel);
+            System.out.println(kombinasyon);
+        }
+            else {
+            System.out.println("Hatalı Giriş Yaptınız");
+        }
+    }
+}
