@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class usluSayi {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i, n, m, toplam = 1;
+        System.out.println("üssü ALınacak Sayıyı Giriniz");
+        m = scan.nextInt();
+        System.out.println("Üs Kaç Olacak Giriniz");
+        n = scan.nextInt();
+        for (i = 1; i <= n; i++) {
+            toplam *= m;
+        }
+        System.out.println(toplam);
+    }
+}
