@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class harmonik {
+    public static void main(String[] args) {
+        double i;
+        double result = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen Bir Değer Giriniz");
+        double n = scan.nextDouble();
+
+        for (i = 1; i <= n; i++) {
+            result += 1 / i;
+        }
+        System.out.println(result);
+    }
+}   
